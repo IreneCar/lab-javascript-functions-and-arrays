@@ -5,7 +5,7 @@
 
 console.log(maxOfTwoNumbers(40, 3));*/
 
-// Iteration #1 con conditional:
+// Iteration #1: Find the maximum with conditional:
 function maxOfTwoNumbers(num1, num2) {
   if (num1 < num2) {
     return num2;
@@ -19,24 +19,49 @@ function maxOfTwoNumbers(num1, num2) {
 console.log(maxOfTwoNumbers(100, 4000));
 
 
+///////////////////////////////////////////////////////
+
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
+let longestWorldByNow = ""
 
-function findLongestWord() {}
+function findLongestWord() {
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longestWorldByNow.length){
+      longestWorldByNow.push();
+    } else if (findLongestWord === []) {
+      return null;
+    }
+  }  
+  
+  return longestWorldByNow;
+}
+findLongestWord()
 
-
+///////////////////////////////////////////////////////
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+let sum = 0
+function sumNumbers(numbers) {
+  for (let i = 0; i < numbers.length; i++){
+    sum += numbers[i];
+  }
+  if (sumNumbers == []) { // <== should return zero if receives an empty array when called
+    return 0;
+  } else if (numbers[i] === 0) { // <== should return zero if all elements are zero
+    return 0;
+  }
+}
+sumNumbers(sum) // <== should return the sum when passed array of numbers
 
-function sumNumbers() {}
-
-
+///////////////////////////////////////////////////////
 
 // Iteration #3.1 Bonus:
 function sum() {}
 
 
+///////////////////////////////////////////////////////
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
@@ -52,6 +77,9 @@ function averageWordLength() { }
 
 // Bonus - Iteration #4.1
 function avg() {}
+
+
+
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
