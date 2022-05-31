@@ -1,6 +1,9 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(num1, num2) {
+  return Math.max(num1, num2);
+}
 
+console.log(maxOfTwoNumbers(40, 3));
 
 
 // Iteration #2: Find longest word
